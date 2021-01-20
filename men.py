@@ -6,12 +6,14 @@ screen_id = 0
 screen = screeninfo.get_monitors()[screen_id]
 W, H = screen.width, screen.height
 
+print('width', W)
+print('height', H)
 
 
 pygame.init()
 WIDTH = W
 HEIGHT = H
-windowSurface = pygame.display.set_mode((WIDTH, HEIGHT), 0, 32)
+windowSurface = pygame.display.set_mode((WIDTH, HEIGHT), pygame.NOFRAME)
 img = pygame.image.load("imgs/1.png")
 while True:
         events = pygame.event.get()
