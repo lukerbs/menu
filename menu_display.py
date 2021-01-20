@@ -14,7 +14,7 @@ pygame.init()
 WIDTH = W
 HEIGHT = H
 windowSurface = pygame.display.set_mode((WIDTH, HEIGHT), pygame.NOFRAME)
-img = pygame.image.load("imgs/1.png")
+img = pygame.image.load("imgs/5.png")
 while True:
         events = pygame.event.get()
         for event in pygame.event.get():
