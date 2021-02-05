@@ -22,13 +22,16 @@ weekend_menu = ['imgs/hotdog.png', 'imgs/nacho.png', 'imgs/potato.png', 'imgs/ta
 
 while True:
 	today = datetime.datetime.today().weekday()
+	print(today)
 	# 0 = Monday, 1 = Tuesday, ..., 6 = Sunday
 	if today == 4:
 		menu = friday_menu
 	if today == 5 or today == 6:
 		menu = weekend_menu
-	else:
+	if today in [0,1,2,3]:
 		menu = weekday_menu
+	print('MENU')
+	print(menu)
 	for i in range(len(menu)):
 		img = pygame.image.load(menu[i])
 		events = pygame.event.get()
