@@ -16,12 +16,15 @@ WIDTH = W
 HEIGHT = H
 windowSurface = pygame.display.set_mode((WIDTH, HEIGHT), pygame.NOFRAME)
 
-weekday_menu = ['imgs/hotdog.png', 'imgs/nacho.png', 'imgs/potato.png', 'imgs/taco.png']
-weekend_menu = ['imgs/hotdog.png', 'imgs/nacho.png', 'imgs/potato.png', 'imgs/taco.png', 'imgs/menudo.png', 'imgs/pazole.png', 'imgs/conchas.png']
+weekday_menu = ['imgs/hotdog.png', 'imgs/nacho.png', 'imgs/potato.png', 'imgs/taco.png', 'imgs/menudo.png', 'imgs/pozole.png']
+friday_menu = ['imgs/hotdog.png', 'imgs/nacho.png', 'imgs/potato.png', 'imgs/taco.png', 'imgs/menudo.png', 'imgs/pozole.png', 'imgs/chowder.png']
+weekend_menu = ['imgs/hotdog.png', 'imgs/nacho.png', 'imgs/potato.png', 'imgs/taco.png', 'imgs/menudo.png', 'imgs/pozole.png', 'imgs/conchas.png']
 
 while True:
 	today = datetime.datetime.today().weekday()
 	# 0 = Monday, 1 = Tuesday, ..., 6 = Sunday
+	if today == 4:
+		menu = friday_menu
 	if today == 5 or today == 6:
 		menu = weekend_menu
 	else:
