@@ -13,7 +13,7 @@ This code is designed to be used on a Raspberry Pi that is connected to a TV scr
 * **Dependencies**
     * There are a few Python dependencies required to run the code. If the dependencies are not already installed on your Raspberry Pi you are using, install them with the following command:
     * Run:
-        * pip3 pygame screeninfo
+        * pip3 install pygame screeninfo
 # Starting the Menu
 * cd into the menu repository and run **python3 menu_display.py**
 * The menu will display in full screen on the TV until you turn off the Raspberry Pi
